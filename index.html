@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./scss/reset.css">
+  <link rel="stylesheet" href="./scss/main.scss">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico">
+
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <a href="/" class="logo">
+      <span>OMDbAPI</span>.COM</a>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <h1 class="title">OMDb API</h1>
+    <p class="lead">The Open
+      <br />
+      Movie Database</p>
+    <p class="intro">The OMDb API is a RESTful web service to obtain movie information,
+      all content and images on the site are contributed and maintained by our users.
+      <br />
+      If you find this service useful, please consider making a one-time donation or become a patron.</p>
+  </main>
+  <!-- SECTION -->
+  <section class="top">
+    <div class="forms">
+          <input 
+            class="search-form"
+            type="text" 
+            placeholder="Search for Movies, Series & More" />
+    <div class="selects">
+      <select class="form-select type">
+        <option value="movie">movie</option>
+        <option value="series">series</option>
+        <option value="episode">episode</option>
+      </select>
+      <select class="form-select count">
+        <option value="1">10</option>
+        <option value="2">20</option>
+        <option value="3">30</option>
+      </select>
+      <select class="form-select year">
+        <option value="">All Years</option>
+      </select>
+
+      <button class="search-btn">Apply</button>
+    </div>
+    </div>
+  </section>
+  <section class="bottom">
+    <div class="movies-list no-result">
+      <span class="message">Search for the movie title!</span>
+      <div class="loading">
+        <div h-loader>
+          <svg viewBox="22.857142857142858 22.857142857142858 45.714285714285715 45.714285714285715">
+            <circle cx="45.714285714285715" cy="45.714285714285715" r="20" stroke-width="5.714285714285714" stroke-dasharray="125.664" stroke-dashoffset="125.66370614359172px"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class="movies">
+        <!-- 영화 목록 출력 -->
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="more hidden">More</button>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="javascript:void(0)" class="footer-logo">
+      <span>OMDbAPI</span>.COM</a>
+    <div class="copyright">&copy;2022 HYZZZII</div>
+  </footer>
+</body>
+
+</html>
