@@ -1,0 +1,25 @@
+{
+  "name": "movie-search-site",
+  "version": "1.0.0",
+  "description": "omdb API를 활용해 영화 검색 기능을 구현했습니다.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyeji-nam/movie-search-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyeji-nam/movie-search-site/issues"
+  },
+  "homepage": "https://github.com/Hyeji-nam/movie-search-site#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.56.1"
+  }
+}
